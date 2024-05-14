@@ -1,0 +1,105 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #fffbf8;
+    margin: 0;
+    padding: 0;
+    color: #663399;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ff69b4;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    background-color: #ffb6c1;
+    width: 200px;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #663399;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+main p {
+    font-size: 16px;
+}
+
+footer {
+    background-color: #ff69b4;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+}
+
+/* MEDIA QUERYS */
+/* 
+    *Cuando el tamaño de la pantalla sea menor que 639px de ancho...
+    *Versión móvil: Esconde el sidebar
+*/
+@media (max-width: 639px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* 
+    *Cuando el tamaño de la pantalla sea mayor que 640px y menor que 1023px de ancho...
+    *Aumenta el tamaño de la fuente del título -> h1 && del párrafo -> p
+*/
+@media (min-width: 640px) and (max-width: 1023px) {
+    header h1 {
+        font-size: 48px;
+    }
+
+    main p {
+        font-size: 20px;
+    }
+}
+
+/* 
+    *Cuando el tamaño de la pantalla sea mayor que 1280px de ancho...
+    *Aumenta el tamaño de la fuente del título -> h1 && del párrafo -> p
+*/
+@media (min-width: 1280px) {
+    header h1 {
+        font-size: 64px;
+    }
+
+    main p {
+        font-size: 28px;
+    }
+}

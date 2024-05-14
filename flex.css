@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#container {
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.element {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: pink;
+    box-shadow: 10px 10px 3px #44414163;
+    border: 2px solid black;
+}
+
+#one {
+    background-color: palevioletred;
+}
+
+#two {
+    background-color: #6c6ceb;
+}
+
+#three {
+    background-color: #8d318d;
+}
+
+#four {
+ background-color: #cfa24c;   
+}
